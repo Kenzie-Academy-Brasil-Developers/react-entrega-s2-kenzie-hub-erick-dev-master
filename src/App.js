@@ -7,8 +7,6 @@
 import Routes from "./routes";
 import GlobalStyles from "./styles/global"
 function App() {
-  // const [user, setUser] = useState({});
-  // const history = useHistory();
   
   return (
     <>

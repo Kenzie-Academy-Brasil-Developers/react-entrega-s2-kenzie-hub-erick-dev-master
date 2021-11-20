@@ -17,6 +17,7 @@ export const ContainerForm = styled.div`
   form {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   input {
     margin: 15px 0 0 0;
@@ -25,6 +26,7 @@ export const ContainerForm = styled.div`
     padding-left: 8px;
   }
   button {
+    width: 275px;
     height: 40px;
     margin: 15px 0;
     background: var(--azul);

@@ -28,7 +28,7 @@ const Login = () => {
   });
 
   const onSubmitFunction = (data) => {
-    history.push("/user/home");
+    history.push("/cadastro");
     // setUser(data);
   };
 
