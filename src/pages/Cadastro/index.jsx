@@ -2,7 +2,7 @@ import Titulo from "../../components/TituloKenzie";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import { Redirect, useHistory } from "react-router";
+import { Redirect } from "react-router";
 import { ContainerForm } from "./styles.js";
 import { Container } from "./styles.js";
 import { toast } from "react-toastify";
@@ -13,7 +13,6 @@ import ModalCadastro from "../../components/ModalCadastro";
 const Cadastro = ({auth}) => {
   const [modal, setModalVisible] = useState(false)
   const [modulo, setModulo] = useState("")
-  const history = useHistory();
   const criarUser = (user) => {
     api.post("/users" ,user).then((resp) => {;setModalVisible(!modal);notify()}).catch(() => error())
     
