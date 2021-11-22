@@ -87,7 +87,7 @@ const apagarTrabalho = (id) => {
 
   useEffect(() => {
     getData();
-  }, []);
+  },);
 
   if (!auth) {
     return <Redirect to="/" />;
