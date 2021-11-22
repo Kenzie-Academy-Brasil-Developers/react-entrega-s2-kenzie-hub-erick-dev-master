@@ -1,5 +1,4 @@
 import {createGlobalStyle} from "styled-components"
-
 export default createGlobalStyle`
     *{
         margin: 0;
@@ -7,6 +6,7 @@ export default createGlobalStyle`
         font-family: Inter , sans-serif;
         box-sizing: border-box;
         outline: 0;
+        list-style: none;
     }
     :root{
         --azul:#403CAA;
@@ -18,9 +18,9 @@ export default createGlobalStyle`
     }
     body{
         min-height: 100vh;
-        background: white;
+        background: var(--branco);
         display: flex;
         justify-content: center;
         align-items: center;
     }
-` 
+`

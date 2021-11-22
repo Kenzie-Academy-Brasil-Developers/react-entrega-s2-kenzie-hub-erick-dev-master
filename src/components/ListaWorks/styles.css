@@ -1,0 +1,51 @@
+/* .itensTech{
+    margin: 0;
+} */
+.itensTech {
+    border-right: 4px solid #F5F5F5;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+.itensTech div {
+    margin: 0 0 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h5 {
+    color: #11995e;
+    display: flex;
+    height: 30px;
+    background: #e7f5ef;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    font-weight: 600;
+  }
+  .itensTech:hover{
+    border-right: 4px solid #11995e;
+  }
+/* .itensTech {
+    border-right: 4px solid #F5F5F5;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    div {
+        margin-left: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h5 {
+        color: #11995e;
+        display: flex;
+        height: 30px;
+        background: #e7f5ef;
+        align-items: center;
+        justify-content: center;
+        min-width: 100px;
+        font-weight: 600;
+      }
+    }
+  }
+*/

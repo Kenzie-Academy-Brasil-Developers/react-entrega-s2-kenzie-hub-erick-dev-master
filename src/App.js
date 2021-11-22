@@ -1,17 +1,24 @@
-// import { useForm } from "react-hook-form";
-// import { yupResolver } from "@hookform/resolvers/yup";
-// import * as yup from "yup";
-// import { Switch, Route } from "react-router";
-// import { useState } from "react";
-// import { useHistory } from "react-router";
+import { ToastContainer } from "react-toastify";
 import Routes from "./routes";
-import GlobalStyles from "./styles/global"
+import GlobalStyles from "./styles/global";
+
 function App() {
-  
   return (
     <>
-      <GlobalStyles/>
-      <Routes/>
+    
+      <GlobalStyles />
+      <Routes />
+      <ToastContainer
+        position="top-right"
+        autoClose={1500}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </>
   );
 }

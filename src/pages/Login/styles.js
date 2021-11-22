@@ -7,7 +7,7 @@ export const Container = styled.div`
 `;
 export const ContainerForm = styled.div`
   border: 2px solid #f5f5f5;
-  height: 330px;
+  height: 400px;
   width: 320px;
   display: flex;
   align-items: center;
@@ -19,12 +19,7 @@ export const ContainerForm = styled.div`
     flex-direction: column;
     align-items: center;
   }
-  input {
-    margin: 15px 0 0 0;
-    height: 40px;
-    width: 275px;
-    padding-left: 8px;
-  }
+
   button {
     width: 275px;
     height: 40px;
