@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 20px 0 20px;
- 
+
 `;
 export const ContainerForm = styled.div`
   margin: 0;
@@ -16,6 +16,7 @@ export const ContainerForm = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  background: white;
 
   form {
     max-width: 500px;
@@ -79,6 +80,7 @@ export const ContainerForm = styled.div`
     padding-top: 11px;
     color: var(--azul);
     border-radius: 8px;
+    cursor: pointer;
   }
   .lista-Modulos li:hover {
     background: #eeecfe;

@@ -2,14 +2,15 @@ import { Container, ContainerForm } from "./styles";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import { Redirect, useHistory } from "react-router";
+import { useHistory } from "react-router";
 import Titulo from "../../components/TituloKenzie";
 import api from "../../services/api";
 import { toast } from "react-toastify";
 
 import {TextField} from "@material-ui/core"
 import { useState } from "react";
-const Login = ({auth,setAuth}) => {
+const Login = ({setAuth}) => {
+  localStorage.clear()
   const history = useHistory();
   const [erro, setErro] = useState(false)
 
@@ -45,7 +46,6 @@ const Login = ({auth,setAuth}) => {
       });setErro(true)})
     console.log(data)
   };
-  auth && <Redirect to={`/home/user:id`}/>
   return (
     <Container>
       <Titulo/>

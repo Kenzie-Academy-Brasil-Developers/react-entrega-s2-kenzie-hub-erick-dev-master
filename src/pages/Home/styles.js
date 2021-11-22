@@ -5,6 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   header {
+    margin-top: 15px;
     height: 80px;
     width: 90vw;
     background: #ffffff;
@@ -28,12 +29,15 @@ export const Container = styled.div`
     min-height: 400px;
     border-radius: 5px;
     margin-top: 30px;
+    background: white;
+    padding: 18px 15px;
   }
   .dadosUser {
     min-width: 290px;
     min-height: 400px;
     border-radius: 5px;
     margin-top: 30px;
+    background: white;
     button{
       border: none;
       background:#F5F5F5;
@@ -49,7 +53,6 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
   }
   .headUser {
     padding: 15px;
@@ -150,10 +153,20 @@ export const Container = styled.div`
 
   @media (min-width: 1024px) {
     #techs{
-    display: flex;
+      display: flex;
+      width: 90vw;
+      flex-direction: row;
+      justify-content: space-between;
   }
+
+
+  
   .tecs{
-    margin-right: 15px;
+    min-width: 380px;
+    
+  }
+  .dadosUser{
+    min-width: 270px;
   }
   }
 `;

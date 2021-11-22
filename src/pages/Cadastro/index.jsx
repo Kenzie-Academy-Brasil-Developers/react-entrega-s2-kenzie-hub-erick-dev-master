@@ -2,7 +2,6 @@ import Titulo from "../../components/TituloKenzie";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import { Redirect } from "react-router";
 import { ContainerForm } from "./styles.js";
 import { Container } from "./styles.js";
 import { toast } from "react-toastify";
@@ -10,7 +9,8 @@ import "react-toastify/dist/ReactToastify.css";
 import api from "../../services/api";
 import { useState } from "react";
 import ModalCadastro from "../../components/ModalCadastro";
-const Cadastro = ({auth}) => {
+const Cadastro = () => {
+  localStorage.clear()
   const [modal, setModalVisible] = useState(false)
   const [modulo, setModulo] = useState("")
   const criarUser = (user) => {
@@ -82,9 +82,9 @@ const Cadastro = ({auth}) => {
     data.course_module = modulo
     criarUser(data)
   };
-  if(auth){
-    return <Redirect to="/home/user:id"/>
-}
+//   if(auth){
+//     return <Redirect to="/home/user:id"/>
+// }
   return (
     <Container>
       {modal && <ModalCadastro setModalVisible={setModalVisible} modal={modal}/>}
@@ -99,8 +99,6 @@ const Cadastro = ({auth}) => {
           <span className="msgError">{errors.bio?.message}</span>
           <input type="text" placeholder="Contato" {...register("contact")} />
           <span className="msgError">{errors.contact?.message}</span>
-          <input type="password" placeholder="password" {...register("password")} />
-          <span className="msgError">{errors.password?.message}</span>
           <ul className="lista-Modulos">
             <li onClick={()=> setModulo("primeiro modulo (Introduçao ao front end)")}>
               Primeiro
@@ -127,6 +125,8 @@ const Cadastro = ({auth}) => {
               </div>
             </li>
           </ul>
+          <input type="password" placeholder="password" {...register("password")} />
+          <span className="msgError">{errors.password?.message}</span>
           <input
             type="password"
             placeholder="Confirmar password"

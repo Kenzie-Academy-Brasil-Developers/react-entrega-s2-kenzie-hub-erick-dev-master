@@ -11,31 +11,31 @@
   z-index: 1;
 }
 
-.TechModal{
+.TechModal {
   padding: 15px;
   background: white;
 }
-.TechModal input{
+.TechModal input {
   padding-left: 10px;
   width: 100%;
-  background: #F5F5F5;
+  background: #f5f5f5;
   border: none;
   height: 40px;
   margin-bottom: 25px;
 }
-.TechModal h3{
+.TechModal h3 {
   font-size: 13px;
 }
-.tituloCadastrar{
+.tituloCadastrar {
   display: flex;
   justify-content: space-between;
 }
-.listaTechUl{
+.listaTechUl {
   display: flex;
   margin: 15px 0;
   font-size: 14px;
 }
-.listaTechUl li{
+.listaTechUl li {
   border-radius: 8px;
   cursor: pointer;
   display: flex;
@@ -45,14 +45,16 @@
   height: 40px;
   margin-right: 10px;
 }
-.listaTechUl li:hover{
+.listaTechUl li:hover {
   background: rgba(78, 71, 255, 0.1);
 }
-.TechModal button{
-  cursor: pointer;
-  width: 100%;
-  height: 40px;
+.TechModal button {
   background: var(--azul);
   color: white;
+  height: 40px;
+  margin-top: 15px;
   font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
