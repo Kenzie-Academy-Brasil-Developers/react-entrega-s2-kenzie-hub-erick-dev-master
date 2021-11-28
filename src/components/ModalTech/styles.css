@@ -12,6 +12,7 @@
 }
 
 .TechModal {
+  border-radius: 5px;
   padding: 15px;
   background: white;
 }
@@ -45,8 +46,9 @@
   height: 40px;
   margin-right: 10px;
 }
-.listaTechUl li:hover {
-  background: rgba(78, 71, 255, 0.1);
+
+#buttonnM:focus{
+  background-color: blue;
 }
 .TechModal button {
   background: var(--azul);

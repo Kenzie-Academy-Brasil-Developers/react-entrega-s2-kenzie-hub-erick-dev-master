@@ -8,7 +8,7 @@ const ListaTechs = ({apagarTrabalho,jobs,e ,editarTrabalho}) => {
     return(
       <li className="itensWorks" key={e.id} onClick={() => {visible !== true && setVisible(true)}}>
         <ModalEditarApagarWork visible={visible} setVisible={setVisible} apagarTrabalho={apagarTrabalho} editarTrabalho={editarTrabalho} e={e} />
-              <img src={jobs} alt="img" />
+              <div className="iconWork"> </div>
             <div>
               <h3>{e.title}</h3>
               <p>{e.description}</p>

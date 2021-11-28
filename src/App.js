@@ -9,6 +9,7 @@ function App() {
       <GlobalStyles />
       <Routes />
       <ToastContainer
+        className="toasty"
         position="top-right"
         autoClose={1500}
         hideProgressBar={false}

@@ -1,7 +1,9 @@
 import Titulo from "../../components/TituloKenzie";
 import { Container } from "./styles";
 import Add from "../../assets/iconAdd.svg";
+import AddWork from "../../assets/addWork.svg";
 import tec from "../../assets/tec.svg";
+import iconTech from "../../assets/iconTech.svg";
 import jobs from "../../assets/jobs.svg";
 import cellphone from "../../assets/cellphone.svg";
 import email from "../../assets/email.svg";
@@ -113,7 +115,7 @@ const apagarTrabalho = (id) => {
         {exibirTech && <ModalTech adcionarTech={adcionarTech} exibirTech={exibirTech} setExibirTech={setExibirTech} editarTech={editarTech}/>}
         <ul className="listaTechs">
         {user.techs?.map((e) => (
-          <ListaTechs e={e} apagarTech={apagarTech} tec={tec} editarTech={editarTech} />
+          <ListaTechs key={e.id} e={e} apagarTech={apagarTech} tec={tec} iconTech={iconTech} editarTech={editarTech} />
         ))}
         </ul>
       </div>
@@ -121,7 +123,9 @@ const apagarTrabalho = (id) => {
         <div className="headTecs">
           
           <h3>Meus Trabalhos</h3>
-          <img src={Add} alt="add" onClick={() => setExibirWork(!exibirWork)} />
+
+          <img src={AddWork} alt="add" onClick={() => setExibirWork(!exibirWork)} className="imgWork" />
+  
         </div>
         { exibirWork && <ModalWork adcionarTrabalho={adcionarTrabalho} exibirWork={exibirWork} setExibirWork={setExibirWork} />}
         <ul className="listaWorks">

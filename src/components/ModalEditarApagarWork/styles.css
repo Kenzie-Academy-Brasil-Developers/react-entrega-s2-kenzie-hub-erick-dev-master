@@ -32,6 +32,9 @@
   border: none;
   border-radius: 5px;
 }
+#ContainerWork .bt1:hover{
+  border: 2px solid #333333;
+}
 #ContainerWork .bt2{
   background: var(--branco);
   font-weight: bold;
@@ -40,4 +43,7 @@
   cursor: pointer;
   border-radius: 5px;
   border: none;
+}
+#ContainerWork .bt2:hover{
+  border: 2px solid #333333;
 }

@@ -8,7 +8,7 @@ export const Container = styled.div`
 
 `;
 export const ContainerForm = styled.div`
-  margin: 0;
+  margin-top: 20px;
   border: 2px solid #f5f5f5;
   min-height: 330px;
   min-width: 320px;

@@ -1,4 +1,4 @@
-span{
+.divTitulo span{
     text-align: center;
     background: var(--azul);
     color: white;
@@ -6,8 +6,7 @@ span{
     font-size: 14px;
     border-radius: 4px;
 }
-div{
-    margin-bottom: 30px ;
+.divTitulo{
     font-size: 17px;
     font-weight: bold;
 }

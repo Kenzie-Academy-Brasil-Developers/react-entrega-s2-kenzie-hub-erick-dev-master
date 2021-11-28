@@ -2,7 +2,7 @@ import "./styles.css"
 const Titulo = () => {
 
     return(
-        <div>
+        <div className="divTitulo">
         Kenzie <span>Hub</span>
         </div>
     )

@@ -35,10 +35,12 @@ const ModalTech = ({ adcionarTech, setExibirTech, exibirTech }) => {
           onChange={(e) => setTitulo(e.target.value)}
         />
         <h3 className="subh3"> Selecionar Status: </h3>
+       
         <ul className="listaTechUl">
           <li onClick={() => setNivelTech("iniciante")}>iniciante</li>
           <li onClick={() => setNivelTech("intermediario")}>intermediario</li>
           <li onClick={() => setNivelTech("avançado")}>avançado</li>
+
         </ul>
         <button onClick={() => verificador()}>Cadastrar</button>
       </div>

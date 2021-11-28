@@ -10,6 +10,9 @@
     align-items: center;
     z-index: 1;
 }
+.tituloCadastrar{
+    margin-bottom: 10px;
+}
 .formWork{
     border-radius: 5px;
     padding: 15px;
@@ -18,6 +21,7 @@
     flex-direction: column;
 }
 .inp1{
+    background: #F5F5F5;
     font-weight: bold;
     color: #999999;
     border: 2px solid #F5F5F5;
@@ -27,6 +31,7 @@
     margin-bottom: 15px;
 }
 .inp2 {
+    background: #F5F5F5;
     font-weight: bold;
     color: #999999;
     border: 2px solid #F5F5F5;

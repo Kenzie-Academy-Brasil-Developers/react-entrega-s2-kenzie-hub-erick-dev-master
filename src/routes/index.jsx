@@ -13,7 +13,6 @@ const Routes = () => {
   } ,[auth])
   return (
     <Switch>
-      <Switch>
         <Route exact path="/">
           <Login auth={auth} setAuth={setAuth} />
         </Route>
@@ -23,7 +22,6 @@ const Routes = () => {
         <Route exact path="/home/users/:id">
           <Home auth={auth} setAuth={setAuth}/>
         </Route>
-      </Switch>
     </Switch>
   );
 };

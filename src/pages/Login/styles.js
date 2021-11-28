@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 export const ContainerForm = styled.div`
+  margin-top: 20px;
   border: 2px solid #f5f5f5;
   height: 400px;
   width: 320px;
@@ -13,13 +15,17 @@ export const ContainerForm = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  background: white;
 
   form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
+    padding: 30px 0;
+    justify-content: space-around;
   }
-
+  
   button {
     width: 275px;
     height: 40px;

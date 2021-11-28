@@ -1,13 +1,18 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  box-sizing: border-box;
   display: flex;
+  width: 100vw;
+  min-height: 100vh;
   flex-direction: column;
   align-items: center;
+  background: var(--branco);
+  padding: 0 20px;
   header {
     margin-top: 15px;
     height: 80px;
-    width: 90vw;
+    width: 100%;
     background: #ffffff;
     box-shadow: 0px 4px 40px -10px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
@@ -16,17 +21,18 @@ export const Container = styled.div`
     padding: 0 20px;
     justify-content: space-between;
     div{
-      margin: 0;
       background: white;
     }
   }
   figure img {
     height: 40px;
     border-radius: 100%;
+   
   }
   .tecs {
-    min-width: 290px;
-    min-height: 400px;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 250px;
     border-radius: 5px;
     margin-top: 30px;
     background: white;
@@ -53,6 +59,13 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 15px;
+  }
+  .headTecs img{
+    cursor: pointer;
+  }
+  .imgWork{
+    fill: #456f9c;
   }
   .headUser {
     padding: 15px;
@@ -65,23 +78,27 @@ export const Container = styled.div`
     border-radius: 10px 10px 0px 0px;
     height: 90px;
     div {
-      margin: 0;
       background: var(--azul);
       height: 80px;
       h3{
         margin: 5px 0 0;
-        font-size: 23px;
+        font-size: 18px;
+        font-weight: bold;
+
       }
       h4{
-        margin: 7px 0 0;
-        font-size: 15px;
+        margin: 4px 0 0;
+        font-size: 12px;
+
+        font-weight: normal;
       }
       h5{
-        display: inline-block;
         background: none;
-        color: white;
-        margin: 5px 0;
-        font-size: 10px;
+        font-size: 12px;
+        font-family: Inter, monospace;
+        font-weight: 400;
+        line-height: 1.66;
+        color: rgb(153, 153, 153);
       }
     }
     img {
@@ -91,6 +108,17 @@ export const Container = styled.div`
   }
   .controlUser{
     padding: 15px 30px;
+    div{
+      border-radius: 5px;
+    }
+    button{
+      margin-top: 20px;
+      border-radius: 8px;
+      height: 60px;
+    }
+    button:hover{
+      border: 2px solid #333333; 
+    }
   }
   .NameContact{
     margin-bottom: 15px;
@@ -125,7 +153,10 @@ export const Container = styled.div`
       }
     }
   }
- 
+  #techs{
+    width: 100%;
+    align-items: flex-start;
+  }
 
   .itensWorks{
     border-right: 4px solid #F5F5F5;
@@ -150,11 +181,11 @@ export const Container = styled.div`
 
   }
 
-
   @media (min-width: 1024px) {
+    padding: 0 50px;
     #techs{
       display: flex;
-      width: 90vw;
+      width: 100%;
       flex-direction: row;
       justify-content: space-between;
   }
@@ -162,7 +193,7 @@ export const Container = styled.div`
 
   
   .tecs{
-    min-width: 380px;
+    width: 380px;
     
   }
   .dadosUser{

@@ -49,7 +49,7 @@ const Cadastro = () => {
         ),
         name: yup
           .string()
-          .min(18, "No minimo 18 caracteres")
+          .min(10, "No minimo 10 caracteres")
           .required("Campo Obrigatório")
           .matches(
             /^([\w]{3,})+\s+([\w\s]{3,})+$/i,
@@ -82,9 +82,7 @@ const Cadastro = () => {
     data.course_module = modulo
     criarUser(data)
   };
-//   if(auth){
-//     return <Redirect to="/home/user:id"/>
-// }
+
   return (
     <Container>
       {modal && <ModalCadastro setModalVisible={setModalVisible} modal={modal}/>}

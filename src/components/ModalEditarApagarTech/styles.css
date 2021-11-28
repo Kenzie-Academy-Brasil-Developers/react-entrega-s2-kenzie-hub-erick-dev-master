@@ -12,9 +12,11 @@
   z-index: 1;
 }
 
-.TechModalLista{
+#containerTechModalLista .TechModalLista{
+  margin: 0;
   padding: 15px;
   background: white;
+  border-radius: 5px;
 }
 .TechModal input{
   padding-left: 10px;
@@ -28,6 +30,7 @@
   font-size: 13px;
 }
 #containerTechModalLista .tituloCadastrarLista{
+  padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -60,6 +63,7 @@
   font-weight: bold;
 }
 #botoesEditar{
+  padding: 0;
   margin: 0;
   display: flex;
   flex-direction: row;
@@ -75,6 +79,9 @@
   border: none;
   border-radius: 5px;
 }
+#botoesEditar .bt1:hover{
+  border: 2px solid #333333;
+}
 #botoesEditar .bt2{
   background: var(--branco);
   font-weight: bold;
@@ -83,4 +90,7 @@
   cursor: pointer;
   border-radius: 5px;
   border: none;
+}
+#botoesEditar .bt2:hover{
+  border: 2px solid #333333;
 }
